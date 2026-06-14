@@ -1,0 +1,20 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro totalDias, anos, meses, dias, resto
+
+        escreva("Digite a idade em dias: ")
+        leia(totalDias)
+
+        anos = totalDias / 365
+        resto = totalDias - (anos * 365)
+
+        meses = resto / 30
+        dias = resto - (meses * 30)
+
+        escreva("Idade: ", anos, " anos, ",
+          meses, " meses e ",
+           dias, " dias.")
+    }
+}
