@@ -1,0 +1,64 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro i
+        real a, b, c
+        real maior, menor, meio
+
+        escreva("Digite 1. 2 ou 3: ")
+        leia(i)
+
+        escreva("Digite a: ")
+        leia(a)
+
+        escreva("Digite b: ")
+        leia(b)
+
+        escreva("Digite c: ")
+        leia(c)
+
+        maior = a
+        menor = a
+
+        se (b > maior)
+        {
+            maior = b
+        }
+
+        se (c > maior)
+        {
+            maior = c
+        }
+
+        se (b < menor)
+        {
+            menor = b
+        }
+
+        se (c < menor)
+        {
+            menor = c
+        }
+
+        meio = a + b + c - maior - menor
+
+        escolha (i)
+        {
+            caso 1:
+                escreva(menor, " ", meio, " ", maior)
+                pare
+
+            caso 2:
+                escreva(maior, " ", meio, " ", menor)
+                pare
+
+            caso 3:
+                escreva(menor, " ", maior, " ", meio)
+                pare
+
+            caso contrario:
+                escreva("Valor de i inválido.")
+        }
+    }
+}
