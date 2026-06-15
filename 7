@@ -1,0 +1,17 @@
+programa
+{
+    funcao inicio()
+    {
+        real custoFabrica, distribuidor, impostos, custoConsumidor
+
+        escreva("Digite o custo de fábrica do carro: ")
+        leia(custoFabrica)
+
+        distribuidor = (custoFabrica * 28) / 100
+        impostos = (custoFabrica * 45) / 100
+
+        custoConsumidor = custoFabrica + distribuidor + impostos
+
+        escreva("Custo ao consumidor: R$ ", custoConsumidor)
+    }
+}
