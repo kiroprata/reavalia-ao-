@@ -1,0 +1,32 @@
+programa
+{
+    funcao inicio()
+    {
+        real a, b, c, maior
+
+        escreva("Digite o valor de a: ")
+        leia(a)
+
+        escreva("Digite o valor de b: ")
+        leia(b)
+
+        escreva("Digite o valor de c: ")
+        leia(c)
+
+        escreva("Valores: ", a, ", ", b, ", ", c, "\n")
+
+        maior = a
+
+        se (b > maior)
+        {
+            maior = b
+        }
+
+        se (c > maior)
+        {
+            maior = c
+        }
+
+        escreva(maior, " e o maior.")
+    }
+}
