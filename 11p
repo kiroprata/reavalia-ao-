@@ -1,0 +1,40 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro a, b, quociente
+
+        escreva("Digite o valor de a: ")
+        leia(a)
+
+        escreva("Digite o valor de b: ")
+        leia(b)
+
+        se (a > b)
+        {
+            quociente = a / b
+
+            se (quociente * b == a)
+            {
+                escreva("São múltiplos")
+            }
+            senao
+            {
+                escreva("Não são múltiplos")
+            }
+        }
+        senao
+        {
+            quociente = b / a
+
+            se (quociente * a == b)
+            {
+                escreva("São múltiplos")
+            }
+            senao
+            {
+                escreva("Não são múltiplos")
+            }
+        }
+    }
+}
